@@ -22,7 +22,7 @@
             <a href="<?php echo url('assurances'); ?>" class="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-800 text-slate-100 font-medium">
                 <span>Assurances</span>
             </a>
-            <?php if($_SESSION['user_role'] === 'admin'): ?>
+            <?php if($_SESSION['user_succursale'] === 'direction'): ?>
             <a href="<?php echo url('utilisateurs'); ?>" class="flex items-center gap-2 px-3 py-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition">
                 <span>Utilisateurs</span>
             </a>
